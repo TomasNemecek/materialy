@@ -1,0 +1,37 @@
+# Materiály – kurz PyLadies Praha
+
+Výukové materiály kurzu programování v Pythonu pro začátečnice.
+Běh **podzim 2026**, 13 lekcí.
+
+## Jak si materiály stáhnout
+
+Nahoře klikni na zelené tlačítko **Code** → **Download ZIP**. Stažený archiv
+rozbal a složku otevři ve VS Code (**File → Open Folder**).
+
+Po každé lekci sem přibude nová složka. Stáhni si ZIP znovu – nové lekce se
+přidávají, ty starší zůstávají beze změny.
+
+## Lekce
+
+| # | Složka | Téma |
+|---|---|---|
+| 1 | `lekce01-prvni-program/` | print, aritmetika, proměnné, input |
+| 2 | `lekce02-podminky/` | porovnávání, if/elif/else, and/or |
+| 3 | `lekce03-funkce-a-cyklus-for/` | vestavěné funkce, cyklus for |
+
+Další lekce přibývají v průběhu kurzu.
+
+## Co najdeš v každé lekci
+
+```
+README.md                  o čem lekce je
+TAHAK.md                   shrnutí na jednu stránku
+01_koncept/                složka na každý koncept
+   NN_nazev.py             výklad se spustitelnými ukázkami
+   cviceni.py              úkoly k procvičení
+   cviceni_bonus.py        bonusy pro rychlíky
+   reseni/                 vzorová řešení
+```
+
+Soubory s výkladem procházej popořadě podle čísla, spouštěj je tlačítkem
+**Run** vpravo nahoře a čti komentáře. Pak se pusť do `cviceni.py`.
