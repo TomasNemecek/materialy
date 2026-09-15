@@ -7,19 +7,17 @@
 # Venku o ní Python neví.
 
 def cena_s_dph(cena):
+    print("Uvnitř funkce je cena:", cena)
     dan = cena * 0.21
     return cena + dan
-
-
-print("Cena s DPH:", cena_s_dph(100))
 
 
 # Parametr je na tom stejně. Tady je proměnná cena i venku,
 # a přesto si funkce žije se svou vlastní:
 cena = 500
 
-print("Ve funkci:", cena_s_dph(100))
-print("Venku:", cena)
+print("Výsledek:", cena_s_dph(100))
+print("Venku je cena:", cena)
 
 
 # Kdyby to tak nebylo, každá funkce by nám přepisovala proměnné

@@ -42,11 +42,12 @@ ohodnot_znamku(5)
 
 
 # 4) Funkce odpocet(od) odpočítá dolů k 1.
+#    Počet opakování známe, jakmile funkci zavoláme -> for.
+#    range(od, 0, -1) začne na od a jde po jedné dolů. Druhé číslo se
+#    do range nepočítá, takže poslední vypsané je 1.
 def odpocet(od):
-    cislo = od
-    while cislo >= 1:
+    for cislo in range(od, 0, -1):
         print(cislo)
-        cislo = cislo - 1
     print("Teď!")
 
 

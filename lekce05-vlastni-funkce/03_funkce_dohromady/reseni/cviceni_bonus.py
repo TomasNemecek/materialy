@@ -45,19 +45,21 @@ def zeptej_se_na_tip():
     return int(input("Hádej číslo od 1 do 20: "))
 
 
-def porovnej(tip, hledane):
-    if tip == hledane:
-        return True
+def je_trefa(tip, hledane):
+    return tip == hledane
+
+
+def napoveda(tip, hledane):
     if tip > hledane:
-        print("Moc velké.")
+        return "Moc velké."
     else:
-        print("Moc malé.")
-    return False
+        return "Moc malé."
 
 
 hledane_cislo = vylosuj_cislo()
 while True:
     tip = zeptej_se_na_tip()
-    if porovnej(tip, hledane_cislo):
+    if je_trefa(tip, hledane_cislo):
         print("Trefa!")
         break
+    print(napoveda(tip, hledane_cislo))

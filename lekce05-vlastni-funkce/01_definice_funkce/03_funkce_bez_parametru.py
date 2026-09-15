@@ -1,21 +1,21 @@
 # ---------------------------------------------
 #  Funkce bez parametru
 # ---------------------------------------------
-# Spusť soubor a odpověz na otázku.
+# Spusť soubor víckrát – pokaždé to dopadne jinak.
 #
-# Někdy funkce nic zvenku nepotřebuje a pokaždé udělá to samé.
-# Závorky pak zůstanou prázdné – v definici i při volání.
+# Někdy funkce nic zvenku nepotřebuje. Závorky pak zůstanou prázdné –
+# v definici i při volání.
 
-def pravidla():
-    print("Hádej číslo od 1 do 20.")
-    print("Po každém tipu ti řeknu, jestli je moc velké, nebo malé.")
-    print("Máš pět pokusů.")
+from random import randrange
 
 
-pravidla()
+def hod_minci():
+    if randrange(1, 3) == 1:
+        print("Panna")
+    else:
+        print("Orel")
 
-odpoved = input("Chceš pravidla zopakovat? (ano/ne) ")
-if odpoved == "ano":
-    pravidla()
 
-print("Tak jdeme hrát.")
+hod_minci()
+hod_minci()
+hod_minci()

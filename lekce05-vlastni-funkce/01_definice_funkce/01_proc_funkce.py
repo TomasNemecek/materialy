@@ -23,23 +23,23 @@
 # Nejdřív se podíváme, jak taková kontrola vypadá bez ní.
 # Heslo bereme jako dost dlouhé, když má aspoň 8 znaků:
 
-heslo = "kolo"
-if len(heslo) < 8:
-    print(heslo, "– moc krátké")
+moje_heslo = "kolo"
+if len(moje_heslo) < 8:
+    print(moje_heslo, "– moc krátké")
 else:
-    print(heslo, "– dost dlouhé")
+    print(moje_heslo, "– dost dlouhé")
 
-heslo = "pyladies2026"
-if len(heslo) < 8:
-    print(heslo, "– moc krátké")
+moje_heslo = "pyladies2026"
+if len(moje_heslo) < 8:
+    print(moje_heslo, "– moc krátké")
 else:
-    print(heslo, "– dost dlouhé")
+    print(moje_heslo, "– dost dlouhé")
 
-heslo = "abc"
-if len(heslo) < 8:
-    print(heslo, "– moc krátké")
+moje_heslo = "abc"
+if len(moje_heslo) < 8:
+    print(moje_heslo, "– moc krátké")
 else:
-    print(heslo, "– dost dlouhé")
+    print(moje_heslo, "– dost dlouhé")
 
 
 # Stejné čtyři řádky třikrát. Až se hranice změní z 8 na 10,
